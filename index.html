@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcade10</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ LOBBY ░░ -->
+  <div id="lobby">
+    <header class="lobby-header">
+      <div class="logo">ARCADE<span>10</span></div>
+      <div class="header-right">
+        <span class="header-sub">9 games · no login · play now</span>
+        <button class="mute-btn" id="muteBtn" title="Toggle sound">♪</button>
+      </div>
+    </header>
+
+    <div class="lobby-hero">
+      <p class="hero-label">Your arcade. Your scores.</p>
+      <h1 class="hero-title">Ten games,<br>one tab.</h1>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="easy">Easy</button>
+      <button class="filter-btn" data-filter="medium">Medium</button>
+      <button class="filter-btn" data-filter="word">Word</button>
+      <button class="filter-btn" data-filter="trivia">Trivia</button>
+      <button class="filter-btn" data-filter="action">Action</button>
+      <button class="filter-btn" data-filter="puzzle">Puzzle</button>
+    </div>
+
+    <div class="game-grid" id="gameGrid"></div>
+
+    <footer class="lobby-footer">
+      Scores saved on this device · No account needed · Built with plain HTML/CSS/JS
+    </footer>
+  </div>
+
+  <!-- ░░ GAME SHELL ░░ -->
+  <div id="gameShell" class="hidden">
+    <div class="shell-bar">
+      <button class="back-btn" id="backBtn">← Lobby</button>
+      <div class="shell-title" id="shellTitle">Game</div>
+      <div class="shell-right">
+        <div class="shell-score-wrap">
+          <span class="shell-score-label">SCORE</span>
+          <span class="shell-score" id="shellScore">0</span>
+        </div>
+        <button class="mute-btn" id="shellMuteBtn">♪</button>
+      </div>
+    </div>
+    <div id="gameContainer"></div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="games/trivia.js"></script>
+  <script src="games/beattap.js"></script>
+  <script src="games/wordblitz.js"></script>
+  <script src="games/memory.js"></script>
+  <script src="games/snake.js"></script>
+  <script src="games/targetpop.js"></script>
+  <script src="games/slidepuzzle.js"></script>
+  <script src="games/asteroid.js"></script>
+  <script src="games/blockdrop.js"></script>
+</body>
+</html>
