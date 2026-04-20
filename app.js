@@ -10,7 +10,7 @@ const GAMES = [
   { id:'slidepuzzle', name:'Slide Puzzle',      tagline:'Rearrange tiles to solve the puzzle.',          icon:'🧩', difficulty:'easy',   genre:'puzzle',  scoreKey:'arcade_slide_best',            scoreLabel:'BEST MOVES',  available:true },
   { id:'asteroid',    name:'Asteroid Blaster',  tagline:'Shoot rocks, survive waves.',                   icon:'🚀', difficulty:'medium', genre:'action',  scoreKey:'arcade_asteroid_highscore',    scoreLabel:'HIGH SCORE',  available:true },
   { id:'beattap',     name:'Beat Tap',          tagline:'4-lane rhythm tap game.',                       icon:'🎵', difficulty:'medium', genre:'action',  scoreKey:'arcade_beattap_best',          scoreLabel:'BEST GRADE',  available:true },
-  { id:'dasher',      name:'Dash Racer',        tagline:'Top-down keyboard racer. 3 laps.',              icon:'🏎️', difficulty:'medium', genre:'action',  scoreKey:'arcade_racer_pb',              scoreLabel:'BEST LAP',    available:false },
+  { id:'dasher',      name:'Dash Racer',        tagline:'Top-down keyboard racer. 3 laps.',              icon:'🏎️', difficulty:'medium', genre:'action',  scoreKey:'arcade_racer_pb',              scoreLabel:'BEST LAP',    available:true },
 ];
 
 const Store = {
